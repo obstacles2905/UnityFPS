@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 1185229744}
   - component: {fileID: 1185229746}
   - component: {fileID: 1185229745}
+  - component: {fileID: 1185229747}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -516,6 +517,23 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1185229747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185229743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b23fa085b37a49f3890633aa2b5c61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 2
+  horizontalSensitivity: 9
+  verticalSensitivity: 9
+  minVerticalAngle: -45
+  maxVerticalAngle: 45
 --- !u!1 &1241967312
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +920,6 @@ GameObject:
   - component: {fileID: 1865426419}
   - component: {fileID: 1865426422}
   - component: {fileID: 1865426423}
-  - component: {fileID: 1865426424}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1041,6 +1058,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 3
 --- !u!4 &1865426420
 Transform:
@@ -1087,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b23fa085b37a49f3890633aa2b5c61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
+  axes: 1
   horizontalSensitivity: 3
   verticalSensitivity: 3
   minVerticalAngle: -45
@@ -1105,19 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 12
---- !u!114 &1865426424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865426416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06589dd279db4a25aff1bb18aad875a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 12
+  gravity: -9.8
 --- !u!1 &1872381143
 GameObject:
   m_ObjectHideFlags: 0
