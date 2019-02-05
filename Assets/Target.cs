@@ -18,6 +18,11 @@ public class Target : MonoBehaviour
     
     public void ReactToHit()
     {
+      EnemyAI ai = GetComponent<EnemyAI> ();
+      
+      if (ai) {
+        ai.SetAlive (false);
+      }
       StartCoroutine (Die ());
     }
     

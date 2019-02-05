@@ -11,8 +11,8 @@ public class Shooting : MonoBehaviour {
 	void Start () {
 		_camera = GetComponent<Camera>();	
     
-    Cursor.lockState = CursorLockMode.Locked;
-    Cursor.visible = false;
+    //Cursor.lockState = CursorLockMode.Locked;
+    //Cursor.visible = false;
 	}
 	
   void OnGUI()
@@ -33,7 +33,7 @@ public class Shooting : MonoBehaviour {
       if (Physics.Raycast(ray, out hit)) {
         GameObject hitObject = hit.transform.gameObject;
         Target target = hitObject.GetComponent<Target> ();
-        
+         
         if(target) {
           target.ReactToHit ();
         } else {
